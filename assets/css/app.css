@@ -48,9 +48,9 @@ form :where(select){
   border: none;
 }
 form p{
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
-  color: #fff;
+  color: #999;
 }
 form .drop-list{
   display: flex;
@@ -82,7 +82,7 @@ form .drop-list{
   cursor: pointer;
   margin-top: 30px;
   font-size: 22px;
-  color: #fff;
+  color: #999;
 }
 form .exchange-rate{
   font-size: 17px;
@@ -160,6 +160,21 @@ label {
 }
 .input:focus ~ .highlight {
   animation: inputHighlighter 0.3s ease;
+}
+form .rates{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.rates .from,.to{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.rates .icon{
+  fill: #fff;
+  margin-left: 20px;
 }
 button {
   background: rgba(255, 255, 255, 0.15);
