@@ -99,20 +99,24 @@ form .drop-list{
   padding: 0;
   margin: 0;
   position: absolute;
+  left: 51px;
   width: 200px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: none;
   max-height: 200px; /* Set a maximum height for the suggestions */
   overflow-y: auto;
-  
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 100;
 }
 
 .suggestionList li {
   padding: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .suggestionList li:hover {
