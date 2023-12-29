@@ -1,35 +1,39 @@
 import {country_list} from './country_list.js';
 
-const droplist = $('form select');
-const fromCurrency = $('.drop-list .from select').eq(0);
-const toCurrency = $('.drop-list .to select').eq(0);
+const searchInput = $('.searchInput');
+const suggestionList = $('.suggestionList');
 const formButton = $('form button').eq(0);
 const amount = $('form input').eq(0);
 const fromRate = $('.rates .from').eq(0);
 const toRate = $('.rates .to').eq(0);
 
-for(let i = 0; i < droplist.length; i++){
 
-    for(let currency_code in country_list){
+// for(let i = 0; i < 2; i++){
 
-        let selected = i == 0 ? currency_code == "USD" ? "selected" : "" : currency_code == "LKR" ? "selected" : "";
-        let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
-        droplist[i].insertAdjacentHTML('beforeend', optionTag);
+//     for(let currency_code in country_list){
 
-    }
+//         let selected = i == 0 ? currency_code == "USD" ? "selected" : "" : currency_code == "LKR" ? "selected" : "";
+//         let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
+//         droplist[i].insertAdjacentHTML('beforeend', optionTag);
 
-    droplist.eq(i).on('change', (e) => {
-        loadflag(e.target);
-    });
-}
+//     }
+
+//     droplist.eq(i).on('change', (e) => {
+//         loadflag(e.target);
+//     });
+// }
 
 $(document).ready(function () {
-    getExchangeRates();
+    // getExchangeRates();
 });
+
+searchInput.on('input', () => {
+    const inputValue = $(this).val().toUpperCase();
+})
 
 formButton.on('click', (e) => {
     e.preventDefault();
-    getExchangeRates();
+    // getExchangeRates();
 })
 
 function loadflag(element){
