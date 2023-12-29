@@ -165,16 +165,15 @@ form .rates{
   display: flex;
   margin-top: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-.rates .from,.to{
+.rates .from,.to,.icon{
   font-size: 24px;
   font-weight: bold;
   color: #fff;
 }
 .rates .icon{
-  fill: #fff;
-  margin-left: 20px;
+  margin: 0 20px;
 }
 button {
   background: rgba(255, 255, 255, 0.15);
