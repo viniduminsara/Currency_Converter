@@ -5,7 +5,6 @@ export const country_list = {
     "XCD" : "AG",
     "ALL" : "AL",
     "AMD" : "AM",
-    "ANG" : "AN",
     "AOA" : "AO",
     "AQD" : "AQ",
     "ARS" : "AR",
