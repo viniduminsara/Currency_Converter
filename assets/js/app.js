@@ -5,7 +5,7 @@ const toInput = $('#toInput').eq(0);
 const fromSuggestionList = $('#fromsuggestList').eq(0);
 const toSuggestionList = $('#toSuggestList').eq(0);
 const formButton = $('form button').eq(0);
-const amount = $('form input').eq(0);
+const amount = $('#amount').eq(0);
 const fromRate = $('.rates .from').eq(0);
 const toRate = $('.rates .to').eq(0);
 const exchangeBtn = $('#exchangeIcon').eq(0);
@@ -112,7 +112,7 @@ function loadflag(name, element){
 function getExchangeRates(){
     let amountVal = parseInt(amount.val()) || 1;
     const url = `https://v6.exchangerate-api.com/v6/3759abf04bc8630a81f3a7dd/latest/${fromInput.val()}`;
-
+    
     $.ajax({
         url: url,
         type: 'GET',
