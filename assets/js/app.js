@@ -15,7 +15,7 @@ fromInput.val('USD');
 toInput.val('LKR');
 
 $(document).ready(function () {
-    getExchangeRates();
+    // getExchangeRates();
 });
 
 // input currency unit
@@ -76,12 +76,12 @@ exchangeBtn.on('click', () => {
     toInput.val(temp);
     loadflag(fromInput.val(), fromInput);
     loadflag(toInput.val(), toInput);
-    getExchangeRates();
+    // getExchangeRates();
 })
 
 formButton.on('click', (e) => {
     e.preventDefault();
-    getExchangeRates();
+    // getExchangeRates();
 });
 
 // Function to display suggestions
