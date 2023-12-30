@@ -6,7 +6,6 @@ export const country_list = {
     "ALL" : "AL",
     "AMD" : "AM",
     "AOA" : "AO",
-    "AQD" : "AQ",
     "ARS" : "AR",
     "AUD" : "AU",
     "AZN" : "AZ",
